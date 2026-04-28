@@ -115,7 +115,6 @@ export default function Navbar() {
               key={link.href}
               onClick={() => handleNavClick(link.href)}
               style={{
-                background: "none",
                 border: "none",
                 cursor: "pointer",
                 padding: "6px 14px",

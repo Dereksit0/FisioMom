@@ -8,7 +8,7 @@ import { Play } from "lucide-react";
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
-};
+} as const;
 
 const videos = [
   { id: 1, title: "Nuestras Clases", src: "/videos/video1.mp4" },
