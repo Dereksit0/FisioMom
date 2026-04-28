@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Fisio Mom – Yoali Marín | Preparación al Parto y Estimulación Temprana",
@@ -30,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es-MX" className="h-full">
+    <html lang="es-MX" className={`${inter.variable} ${playfair.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         {children}
       </body>

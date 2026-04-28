@@ -5,12 +5,13 @@ import { useState, useEffect } from "react";
 import { Menu, X, Heart } from "lucide-react";
 
 const navLinks = [
-  { label: "Inicio", href: "#hero" },
   { label: "Programa", href: "#programa" },
   { label: "Beneficios", href: "#beneficios" },
   { label: "Testimonios", href: "#testimonios" },
-  { label: "Modalidades", href: "#modalidades" },
   { label: "Horarios", href: "#horarios" },
+  { label: "Comunidad", href: "#comunidad" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Ubicación", href: "#ubicacion" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -93,7 +94,7 @@ export default function Navbar() {
           <div>
             <span
               style={{
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "var(--font-playfair), serif",
                 fontWeight: "700",
                 fontSize: "20px",
                 color: "#7B2D8B",
